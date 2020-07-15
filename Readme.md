@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Панасюк Сергей](https://up.htmlacademy.ru/adaptive/20/user/1486003).
-* Наставник: [Дмитрий Гуляев]
+* Наставник: [Дмитрий Гуляев](https://up.htmlacademy.ru/adaptive/20/user/87930).
 
 ---
 
