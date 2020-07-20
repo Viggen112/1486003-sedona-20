@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Сайт для путешественников Седона</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -73,29 +72,26 @@
             </p>
             <p class="contacs-item">
               <label for="email">Электронная почта*:</label>
-              <input id="phone-number" type="tel" name="phone" placeholder="Введите e-mail">
+              <input id="email" type="email" name="email" placeholder="Введите e-mail">
             </p>
           </div>
           <fieldset class="impression-box">
             <legend class="filter-checks">Ваше общее впечатление:</legend>
-              <ul class="filter-list">
-                <li class="filter-option filter-radio">
-                  <input class="visually-hidden impression-input-radio impression-input" type="radio" name="types-of-impression" value="good" id="filter-good" checked>
-                  <label for="filter-good">Скорее положительное</label>
-                </li>
-                <li class="filter-option filter-radio">
-                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="types-of-impression" value="no-good" id="filter-fixed">
-                  <label for="filter-no-good">Скорее отрицательное</label>
-                </li>
-                <li class="filter-option filter-radio">
-                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="types-of-impression" value="unknown" id="filter-rubber">
-                  <label for="filter-unknown">Затрудняюсь ответить</label>
-                </li>
-              </ul>
+              <p class="filter-option filter-radio">
+                <input class="visually-hidden impression-input-radio impression-input" type="radio" name="types-of-impression" value="good" id="filter-good" checked>
+                <label for="filter-good">Скорее положительное</label>
+              </p>
+              <p class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="types-of-impression" value="bad" id="filter-bad">
+                <label for="filter-bad">Скорее отрицательное</label>
+              </p>
+              <p class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="types-of-impression" value="unknown" id="filter-unknown">
+                <label for="filter-unknown">Затрудняюсь ответить</label>
+              </p>
           </fieldset>
           <fieldset class="attractions-box">
             <legend class="attractions-checks">Посещенные достопримечательности:</legend>
-            <ul class="attractions-list">
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bridge" id="filter-bridge" checked>
                 <label for="filter-bridge">Мост Дьявола</label>
@@ -106,19 +102,18 @@
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="park" id="filter-park" checked>
-                <label for="filter-news">Слайд-парк</label>
+                <label for="filter-slide">Слайд-парк</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="rock" id="filter-rock">
-                <label for="filter-galery">Красные скалы</label>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="rocks" id="filter-rock">
+                <label for="filter-rocks">Красные скалы</label>
               </li>
-            </ul>
           </fieldset>
           <div class="emotion">
             <h2 class="form-title">Опишите свои эмоции</h2>
             <p class="emotion-text">
               <label for="emotion-text"></label>
-              <textarea id="emotion-text" type="text" name="text" placeholder="Опишите подробно все свои<br>восторги" rows="5" cols="125"></textarea>
+              <textarea id="emotion-text" name="text" placeholder="Опишите подробно все свои<br>восторги" rows="5" cols="125"></textarea>
             </p>
             <button class="button-form button" type="submit">Отправить</button>
               <a href="#" class="modal-close">Закрыть</a>
