@@ -12,6 +12,9 @@
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="Sedona">
       </a>
       <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -27,136 +30,145 @@
               <a href="http://htmlacademy.ru">Html Academy</a>
             </li>
           </ul>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
         </div>
       </nav>
     </header>
 
-    <main class="page-form">
-      <section class="title-form">
-        <div class="form-list">
-          <img src="img/sedona-small.jpg" alt="Маленькая Седона">
-            <h2 class="form-main">Оставьте свой отзыв</h2>
-            <p class="form-main-text">Помогите нашим отеля стать лучше!<br> Оставьте отзыв о них, а ткаже<br> о посещенных Вами<br> достопримечательностях</p>
-        </div>
-      </section>
-      <section class="form">
-        <form class="form-name" action="http://echo.htmlacademy.ru" method="post">
-          <div class="form-name-wrapper">
-            <h2 class="form-title">Представьтесь</h2>
-            <p class="name-item">
-              <label for="name-name">Имя*:</label>
-              <input id="name-name" type="text" name="name" placeholder="Петр">
-            </p>
-            <p class="name-item">
-              <label for="last-name-name">Фамилия*:</label>
-              <input id="last-name-name" type="text" name="name" placeholder="Иванов">
-            </p>
-            <p class="name-item">
-              <label for="father-name-name">Отчество*:</label>
-              <input id="father-name-name" type="text" name="name" placeholder="Александрович">
-            </p>
+    <main class="page__form">
+      <div class="page-container">
+        <section class="title-form">
+          <div class="form-list">
+            <img src="img/sedona-small.jpg" alt="Маленькая Седона">
+              <h2 class="form-main">Оставьте свой отзыв</h2>
+              <p class="form-main-text">Помогите нашим отеля стать лучше!<br> Оставьте отзыв о них, а также о<br> посещенных Вами<br> достопримечательностях</p>
           </div>
-          <div class="contacts">
-            <h2 class="form-title">Контактная информация</h2>
-            <p class="contacs-item">
-              <label for="phone-number">Контактный телефон*:</label>
-              <input id="phone-number" type="tel" name="phone" placeholder="Введите телефон">
-            </p>
-            <p class="contacs-item">
-              <label for="email">Электронная почта*:</label>
-              <input id="email" type="email" name="email" placeholder="Введите e-mail">
-            </p>
-          </div>
-          <fieldset class="impression-box">
-            <legend class="filter-checks">Ваше общее впечатление:</legend>
-              <p class="filter-option filter-radio">
-                <input class="visually-hidden impression-input-radio impression-input" type="radio" name="types-of-impression" value="good" id="filter-good" checked>
-                <label for="filter-good">Скорее положительное</label>
+        </section>
+        <section class="form">
+          <form class="form-name" action="http://echo.htmlacademy.ru" method="post">
+            <div class="form-name-wrapper">
+              <h2 class="form-title">Представьтесь</h2>
+              <p class="name-item">
+                <label for="name-name">Имя*:</label>
+                <input id="name-name" type="text" name="name" placeholder="Петр">
               </p>
-              <p class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="types-of-impression" value="bad" id="filter-bad">
-                <label for="filter-bad">Скорее отрицательное</label>
+              <p class="name-item">
+                <label for="last-name-name">Фамилия*:</label>
+                <input id="last-name-name" type="text" name="name" placeholder="Иванов">
               </p>
-              <p class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="types-of-impression" value="unknown" id="filter-unknown">
-                <label for="filter-unknown">Затрудняюсь ответить</label>
+              <p class="name-item">
+                <label for="father-name-name">Отчество:</label>
+                <input id="father-name-name" type="text" name="name" placeholder="Александрович">
               </p>
-          </fieldset>
-          <fieldset class="attractions-box">
-            <legend class="attractions-checks">Посещенные достопримечательности:</legend>
-              <p class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bridge" id="filter-bridge" checked>
-                <label for="filter-bridge">Мост Дьявола</label>
+            </div>
+            <div class="contacts">
+              <h2 class="form-title">Контактная информация</h2>
+              <p class="contacts-item">
+                <label for="phone-number">Контактный телефон*:</label>
+                <input id="phone-number" type="tel" name="phone" placeholder="Введите телефон">
               </p>
-              <p class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="mountain" id="filter-mountain" checked>
-                <label for="filter-mountain">Гора-Колокол</label>
+              <p class="contacts-item">
+                <label for="email">Электронная почта*:</label>
+                <input id="email" type="email" name="email" placeholder="Введите e-mail">
               </p>
-              <p class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="park" id="filter-park" checked>
-                <label for="filter-park">Слайд-парк</label>
+            </div>
+            <fieldset class="impression-box">
+              <legend class="filter-checks">Ваше общее впечатление:</legend>
+                <p class="filter-option filter-radio">
+                  <input class="visually-hidden impression-input-radio impression-input" type="radio" name="types-of-impression" value="good" id="filter-good" checked>
+                  <label for="filter-good">Скорее положительное</label>
+                </p>
+                <p class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="types-of-impression" value="bad" id="filter-bad">
+                  <label for="filter-bad">Скорее отрицательное</label>
+                </p>
+                <p class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="types-of-impression" value="unknown" id="filter-unknown">
+                  <label for="filter-unknown">Затрудняюсь ответить</label>
+                </p>
+            </fieldset>
+            <fieldset class="attractions-box">
+              <legend class="attractions-checks">Посещенные достопримечательности:</legend>
+                <p class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bridge" id="filter-bridge" checked>
+                  <label for="filter-bridge">Мост Дьявола</label>
+                </p>
+                <p class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="mountain" id="filter-mountain" checked>
+                  <label for="filter-mountain">Гора-Колокол</label>
+                </p>
+                <p class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="park" id="filter-park" checked>
+                 <label for="filter-park">Слайд-парк</label>
+                </p>
+                <p class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="rocks" id="filter-rocks">
+                  <label for="filter-rocks">Красные скалы</label>
+                </p>
+            </fieldset>
+            <div class="emotion">
+              <h2 class="emotion-title">Опишите свои эмоции</h2>
+              <p class="emotion-text">
+                <label for="emotion-text"></label>
+                <textarea id="emotion-text" name="text" placeholder="Опишите подробно все свои восторги" rows="5" cols="125"></textarea>
               </p>
-              <p class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="rocks" id="filter-rocks">
-                <label for="filter-rocks">Красные скалы</label>
-              </p>
-          </fieldset>
-          <div class="emotion">
-            <h2 class="form-title">Опишите свои эмоции</h2>
-            <p class="emotion-text">
-              <label for="emotion-text"></label>
-              <textarea id="emotion-text" name="text" placeholder="Опишите подробно все свои<br>восторги" rows="5" cols="125"></textarea>
-            </p>
-            <button class="button-form button" type="submit">Отправить</button>
-              <a href="#" class="modal-close">Закрыть</a>
-          </div>
-        </form>
-      </section>
+              <button class="button-form button" type="submit">Отправить</button>
+                <a href="#" class="modal-close">Закрыть</a>
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
-      <div class="social-button">
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-button twitter" href="http://twitter.com">
-              <img src="img/twitter-icon.svg" alt="Страница в Твиттер">
-              <p class="visually-hidden">Наша страница в Инстаграм</p>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-button facebook" href="http://facebook.com">
-              <img src="img/facebook-icon.svg" alt="Страница в Фейсбук">
-              <p class="visually-hidden">Наша страница в Фейсбук</p>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-button" href="http://youtube.com">
-              <img src="img/youtube-icon.svg" alt="Наш ютюб-канал">
-              <p class="visually-hidden">Наша страница в Инстаграм</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <b class="copyright-text">Разработано</b>
+      <section class="social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <div class="social-net">
+          <b class="social-title">#VisitSedona</b>
+        </div>
+        <div class="social-button">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-button twitter" href="http://twitter.com">
+                <img src="img/twitter-icon.svg" alt="Страница в Твиттер">
+                <p class="visually-hidden">Наша страница в Инстаграм</p>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-button facebook" href="http://facebook.com">
+                <img src="img/facebook-icon.svg" alt="Страница в Фейсбук">
+                <p class="visually-hidden">Наша страница в Фейсбук</p>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-button youtube" href="http://youtube.com">
+                <img src="img/youtube-icon.svg" alt="Наш ютюб-канал">
+                <p class="visually-hidden">Наша страница в Инстаграм</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <b class="copyright-text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
           </a>
-      </div>
-    </footer>
+        </div>
+      </section>
+  </footer>
     <section class="fail-window">
-      <h3 class="fail-title">Что-то пошло не так!</h3>
-      <p class="fail-text">Проверьте поля, выделенные<br> красным, скорее всего Вы<br> забыли их заполнить</p>
-      <button class="button-fail button" type="reset">Ок</button>
-      <a href="#" class="fail-close">Закрыть</a>
+      <div class="fail-container">
+        <h3 class="fail-title">Что-то пошло не так!</h3>
+        <p class="fail-text">Проверьте поля, выделенные<br> красным, скорее всего Вы<br> забыли их заполнить</p>
+        <button class="button-fail button" type="reset">Ок</button>
+          <a href="#" class="fail-close">Закрыть</a>
+      </div>
     </section>
     <section class="success-window">
-      <h3 class="success-title">Ваш отзыв отправлен!</h3>
-      <p class="success-text">Спасибо за Ваше участие, Ваш<br> отзыв уже поступил к нам. В ближайшее время мы<br> опубликуем его на сайте.</p>
-      <button class="button-success button" type="button">Ок</button>
-      <a href="#" class="success-close">Закрыть</a>
+      <div class="success-container">
+        <h3 class="success-title">Ваш отзыв отправлен!</h3>
+        <p class="success-text">Спасибо за Ваше участие, Ваш<br> отзыв уже поступил к нам. В ближайшее время мы<br> опубликуем его на сайте.</p>
+        <button class="button-success button" type="button">Ок</button>
+          <a href="#" class="success-close">Закрыть</a>
+      </div>
     </section>
 
   </body>
