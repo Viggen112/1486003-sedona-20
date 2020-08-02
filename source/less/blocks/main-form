@@ -1,22 +1,22 @@
-.form-list {
+.title-form__list {
   text-align: center;
 }
-.form-main,
-.form-title,
-.filter-checks,
-.attractions-checks,
-.emotion-title {
+.title-form__main,
+.form-name__title,
+.contacts-form__title,
+.impression-box__checks,
+.attractions-box__checks,
+.emotion__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
 }
-.form-main-text {
+.title-form__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
 }
-.contacts,
-.name-item input,
+.form-name__wrapper input,
 .contacts input{
   border: 0;
 }
@@ -31,9 +31,9 @@
   position: relative;
   padding-left: 75px;
 }
-.name-item,
-.contacts-item,
-.filter-option filter-radio {
+.form-name__item,
+.contacts-form__item,
+.impression-box__item {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
@@ -45,14 +45,12 @@
   line-height: 26px;
   text-transform: none;
 }
-.emotion-text textarea {
+.emotion__text textarea {
   border: none;
   width: 279px;
   height: 160px;
 }
-.name-item input,
-.contacts-item input,
-.emotion-text textarea{
+placeholder {
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;

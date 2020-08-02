@@ -1,16 +1,12 @@
-@import "blocks/nav.less";
 @import "global/variables.less";
-
-      //viewports
-
-@tablet-width: 768px;
-@desktop-width: 1200px;
-@mobile-width-only: 767px;
-
 @import "global/fonts.less";
+@import "global/hidden.less";
+@import "global/viewports.less";
 @import "global/global.less";
+@import "global/body.less";
 @import "blocks/page.less";
 @import "blocks/page-header.less";
+@import "blocks/nav.less";
 @import "blocks/main-nav.less";
 @import "blocks/about-us.less";
 @import "blocks/reasons.less";
@@ -18,56 +14,16 @@
 @import "blocks/booking.less";
 @import "blocks/map.less";
 @import "blocks/social-block.less";
+@import "blocks/copyright.less";
 @import "blocks/title-form.less";
 @import "blocks/name-form.less";
 @import "blocks/gallery-main.less";
 @import "blocks/gallery-list.less";
+@import "blocks/main-form.less";
+@import "blocks/name.less";
+@import "blocks/contacts.less";
+@import "blocks/impression.less";
+@import "blocks/attractions.less";
+@import "blocks/emotion.less";
 @import "blocks/fail.less";
 @import "blocks/success.less";
-
-  body {
-    text-transform: uppercase;
-    font-family: "PT Sans", Arial, serif;
-    font-size: 18px;
-    color: @black;
-    background-color: @white;
-  }
-
-  .impression-box,
-  .attractions-box {
-    border: 0;
-    margin: 0;
-    padding: 0;
-  }
-  .impression-box label,
-  .attractions-box label {
-    position: relative;
-    padding-left: 75px;
-  }
-  .name-item,
-  .contacts-item,
-  .filter-option filter-radio {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 26px;
-  }
-  .impression-box label,
-  .attractions-box label{
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: none;
-  }
-  .emotion-text textarea {
-    border: none;
-    width: 279px;
-    height: 160px;
-  }
-  .name-item input,
-  .contacts-item input,
-  .emotion-text textarea{
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-    color: #000000;
-  }
