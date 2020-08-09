@@ -8,3 +8,33 @@
 .about-city__item {
   list-style: none;
 }
+
+.about-city__title {
+  position: relative;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.about-city__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-city__item{
+    width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-city__item{
+    width: 960px;
+    margin: 0 auto;
+  }
+}

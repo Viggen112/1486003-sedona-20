@@ -2,5 +2,16 @@
   margin: 0 auto;
   padding: 0;
   width: 320px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  background-color: @white;
+  color: @black;
+}
+
+.page-header__logo {
+  height: 84px;
+}
+
+@media (min-width: @desktop-width) {
+  height: 96px;
 }
