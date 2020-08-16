@@ -1,3 +1,16 @@
+.form-name__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 640px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    padding: 120px;
+  }
+}
+
 .form-name__wrapper input {
   border: 0;
 }
@@ -6,6 +19,10 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .form-name__item {

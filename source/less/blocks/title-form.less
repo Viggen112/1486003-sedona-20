@@ -1,11 +1,27 @@
 .title-form__list {
   text-align: center;
+  width: 306px;
+  height: 151px;
+
+  @media (min-width: @tablet-width) {
+    width: 435px;
+    height: 119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 435px;
+    height: 108px;
+  }
 }
 
 .title-form__main {
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .title-form__text {

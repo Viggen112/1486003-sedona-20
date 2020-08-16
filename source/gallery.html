@@ -8,27 +8,25 @@
 
   <body class="page__body">
     <header class="page-header">
-      <div class="logo">
         <a class="page-header__logo">
           <img src="img/logotype-mobile.svg" width="102" height="84" alt="Sedona">
         </a>
-      </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+            <ul class="main-nav__list">
+              <li class="main-nav__list__item">
                 <a>Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__list__item">
                 <a href="gallery.html">Фото и видео</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__list__item">
                 <a href="form.html">Форма отзыва</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__list__item">
                 <a href="http://htmlacademy.ru">Html Academy</a>
               </li>
             </ul>
@@ -36,12 +34,13 @@
         </nav>
     </header>
 
-    <main class="page__gallery">
+    <main class="page-gallery">
+      <h2 class="visually-hidden">Галерея</h2>
       <div class="form-list">
         <img src="img/sedona-small.jpg" alt="Маленькая Седона">
       </div>
       <section class="gallery">
-        <h2 class="gallery__title">Фото и видео</h2>
+        <h3 class="gallery__title">Фото и видео</h3>
         <p class="gallery__text">Не можете решиться на путешествие<br> из-за курса? Фотографии помогут Вам<br> забыть о политике и экономике.</p>
         <ul class="gallery-list">
           <li class="gallery-list__item">
@@ -70,7 +69,7 @@
           </li>
           <li class="gallery-list__item">
             <img src="img/road.mp4" alt="Видео обзор">
-            <h2 class="gallery-list__video">Все еще сомневаетесь?</h2>
+            <h3 class="gallery-list__video">Все еще сомневаетесь?</h3>
             <p class="gallery-list__text">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз</p>
           </li>
         </ul>
@@ -79,7 +78,7 @@
 
     <footer class="page-footer">
       <section class="social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+        <h3 class="visually-hidden">Социальные сети</h3>
         <div class="social-net">
           <b class="social-net__title">#VisitSedona</b>
         </div>
