@@ -19,17 +19,15 @@
   text-align: center;
 }
 
-@media (min-width: @tablet-width) {
-  .promo {
+.promo {
+  @media (min-width: @tablet-width) {
     width: 520px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .promo {
+  @media (min-width: @desktop-width) {
     width: 483px;
     margin: 0 auto;
   }

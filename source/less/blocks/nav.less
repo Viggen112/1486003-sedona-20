@@ -1,10 +1,9 @@
-.main-nav__wrapper {
+.nav-wrapper {
   width: 320px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
     width: 80%;
+    order: 2;
     margin: 0 auto;
   }
 
@@ -13,29 +12,30 @@
   }
 }
 
-.main-nav__toggle {
+.nav__toggle {
   align-content: center;
   position: relative;
   display: none;
 }
 
-.main-nav__list {
+.nav-list {
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+    width: 90%;
   }
 }
 
-.main-nav__list__item a {
+.nav-list__item a {
   color: @white;
   text-decoration: none;
 
@@ -44,7 +44,7 @@
   }
 }
 
-.main-nav__list__item {
+.nav-list__item {
   padding: 0;
   margin: 0;
   background-color: @lightblue;
