@@ -1,6 +1,10 @@
 .small-advantages-list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .small-advantages-list__item {
@@ -8,6 +12,17 @@
   text-align: center;
   background-color: @baige;
   padding-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 33.33%;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .small-advantages-list__title {

@@ -1,4 +1,22 @@
 .reasons {
   text-align: center;
   font-weight: normal;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
+.reasons__view {
+  margin: 0;
+  padding: 0;
+  background-color: @white;
+  height: 256px;
 }

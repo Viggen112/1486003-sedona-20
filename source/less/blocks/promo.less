@@ -6,6 +6,10 @@
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .promo__text {
@@ -13,4 +17,18 @@
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+}
+
+.promo {
+  @media (min-width: @tablet-width) {
+    width: 520px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 483px;
+    margin: 0 auto;
+  }
 }

@@ -1,6 +1,22 @@
 .page-header {
-  margin: 0 auto;
-  padding: 0;
   width: 320px;
-  display: grid;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  color: @black;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.page-header__logo {
+  height: 84px;
+  display: block;
+  margin: auto;
+
+  @media (min-width: @desktop-width) {
+    height: 96px;
+  }
 }
